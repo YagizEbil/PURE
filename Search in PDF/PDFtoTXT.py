@@ -1,7 +1,7 @@
 from PyPDF2 import PdfFileReader
 from pathlib import Path
 
-pdfpath = str(input("Enter PDF path: "))
+pdfpath = input("Enter PDF path: ")
 
 pdf = PdfFileReader(pdfpath)
 
