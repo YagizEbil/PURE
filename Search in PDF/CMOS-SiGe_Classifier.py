@@ -7,7 +7,7 @@ CMOS_count = 0
 SiGe_count = 0
 
 
-pdffiles = str(input("Enter Paths(xxx.pdf,yyy.pdf,aaa.pdf): ")) #an automation should be considered for this part, such as: "cmos" + count + ".pdf"...
+pdffiles = str(input("Enter Paths(xxx.pdf,yyy.pdf,aaa.pdf): ")) 
 pdf_files = pdffiles.split(",")
 pdf_files_absolute_path = []
 for i in pdf_files:
@@ -38,7 +38,7 @@ for i in pdf_files_absolute_path:
         elif CMOS_count/SiGe_count <= 0.5:
             print("This amplifier build by using SiGe technique")
         else:
-            print("Bad written or unable to define")
+            print("Bad written, not related or unable to define")
     elif CMOS_count >= 2:
         print("This amplifier build by using CMOS technique")
     else:
